@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_gradiant"
+    tools:context=".imc"
+    >
+
+
+    <EditText
+        android:id="@+id/altImc"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@color/teal_200"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Altura "
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="114dp" />
+
+    <EditText
+        android:id="@+id/pesoImc"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="56dp"
+        android:background="@color/teal_200"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Peso"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/altImc" />
+
+    <Button
+        android:id="@+id/BtnImc"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="344dp"
+        android:background="@drawable/btn_redondiado"
+        android:text="Calcular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pesoImc"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
